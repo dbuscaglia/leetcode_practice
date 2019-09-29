@@ -21,6 +21,7 @@ Example 2:
 Input: "cbbd"
 Output: "bb"
 '''
+import math
 
 
 class Solution(object):
@@ -29,8 +30,12 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
+        current_longest = ""
+        # idea: start in middle and go both ways
+        floor_middle = math.floor(len(s) / 2)
+        breakpoint()
         return "bab"
 
 
 
-assert Solution().longestPalindrome("babad") == "bab"
+assert Solution().longestPalindrome("babada") == "bab"
