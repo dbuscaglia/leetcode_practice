@@ -26,15 +26,15 @@ class Solution(object):
 		# doing something with 2 pointers here...
 		l = 0
 		r = len(height) -  1
-
+		
 		while (l != r):
 			y_l = height[l]
 			y_r = height[r]
 
 			y = min(y_r, y_l)
 			x = r - l
-			max_height = max(max_height, y * x)
 
+			max_height = max(max_height, y * x)
 			if y_l >= y_r:
 				r -= 1
 			else:
